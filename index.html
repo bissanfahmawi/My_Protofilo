@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My - Protfolio - Bissan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body class="overflow-x-hidden font-Outfit">
+    <!-- الخلفية الثابتة -->
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <!-- القائمة -->
+    <nav id="navbar" class="w-full fixed px-5 lg:px-[8%] py-4 flex items-center justify-between z-50 transition duration-300">
+        <img src="./images/ourlogo.png" alt="Logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg:white shadow-sm bg-opacity-50">
+            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="#work">MY PROJECTS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#top">HOME</a></li>
+            
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 hover:bg-[#E6E6FA] transition duration-300">
+                Contact me
+                <img src="./images/arrow-icon.png" alt="" class="w-3">
+            </a>
+                 <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu-black.png" alt="" class="w-6">
+            </button>
+        </div>
+
+        <!-- القائمة الجانبية للموبايل -->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-5 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 text-right direction-rtl">
+            <div onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-4 cursor-pointer font-Outfit">
+            </div>
+            <li><a href="#top" onclick="closeMenu() ">HOME</a></li>
+            <li><a href="#about" onclick="closeMenu()">ABOUT ME</a></li>
+            <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+            <li><a href="#work" onclick="closeMenu()">MY PROJECTS</a></li>
+            <li><a href="#contact" onclick="closeMenu()">CONTACT ME</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوى الهيدر -->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center space-y-8 ">
+        <img src="./images/me.jpeg" alt="" class="rounded-full w-32 h-32 object-cover mt-12" />
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl">
+            Hi! I'm Bissan Fahmawi <img src="./images/hand-icon.png" class="w-6" alt="">
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Full Stack Web Developer Based in Amman</h1>
+        <p class="max-w-2xl mx-auto">
+            I'm a front-end developer from Amman, Jordan, with experience in web development, having worked on several projects across various disciplines. I'm proficient in technologies such as React.js, ASP.NET, MVC, SQL Server, and MongoDB, and I always strive to provide creative and effective solutions.
+        </p>
+    </div>
+    
+
+    </body>
+<!----------About------------->
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-[110px] mt-20 "data-aos="fade-up">
+    <h4 class="text-center mb-2 text-3xl"> ABOUT ME...!</h4>
+   <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+    <div class="max-w-max mx-auto relative">
+        <img src="./images/me.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+            <img src="./images/circular-text.png" alt="" class="w-full animate-spin_slow">
+            <img src="./images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        </div>
+    </div>
+       
+    
+    <div class="flex-1"> 
+        <p class="mb-10 max-w-2xl ">I studied software engineering at Al-Zaytoonah University and have experience developing websites using React.js, HTML , CSS ,JavaScript , ASP.NET, Node.js and MongoDB,SQL Server in addition to other technologies.</p>
+        <p class="mb-10 max-w-2xl "> I am passionate about creating innovative software solutions that help improve user experiences and develop robust and efficient systems.</p>
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-8xl items-center">
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <img src="./images/code-icon.png" alt="" class="w-7 mt-3 ">
+                <h3 class="my-4 font-semibold text-gray-700 font-Outfit"> Languages</h3>
+                <p class="text-gray-600 text-sm ">HTML,   CSS,   JavaScript,   React.js,   Node.js,   ASP.net,   MVC </p>
+            </li>
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <img src="./images/project-icon.png" alt="" class="w-7 mt-3">
+                <h3 class="my-4 font-semibold text-gray-700 font-Outfit">Projects</h3>
+                <p>
+                    Built more than <span id="projects-counter" class="font-bold text-gray-800">0</span>+
+                </p>
+            </li>
+            
+        </ul>
+
+        <h4 class="my-6 text-gray-700">Tools i use</h4>
+        <ul class="flex items-center gap-3 sm:gap-5">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"><img src="./images/vscode.png" alt="" class="w-5 sm:w-7"></li>
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"><img src="./images/figma.png" alt="" class="w-5 sm:w-7"></li>
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"><img src="./images/mongodb.png" alt="" class="w-5 sm:w-7"></li>
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"><img src="./images/git.png" alt="" class="w-5 sm:w-7"></li>
+
+        </ul>
+    </div>    
+   </div>
+</div>
+<!---------Services------------>
+<div id="services" class="w-full px-[12%] py-10 scroll-mt-20 scroll-mt-[120px]"data-aos="fade-up">
+    <h4 class="text-center mb-2 text-3xl">SERVICES...</h4>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Providing enabling platforms that allow users to access economic opportunities such as selling products or providing services.  </p>
+    <div class="grid grid-cols-auto gap-6 my-10 ">
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="./images/web-icon.png" alt="" class="w-10">
+            <!-- نص عربي -->
+            <h3 class="text-lg my-4 text-gray-700">Website design</h3>
+            <!-- نص إنجليزي -->
+            <p class="text-sm text-gray-600 leading-5 text-left font-Ovo">Web Development is the Process of Building, Programming ...</p>
+            <!-- نص عربي -->
+            <p class="text-sm text-gray-600 leading-5 text-right">تطوير الويب هو عملية بناء وبرمجة</p>
+            <a href="" class="flex items-center gap-2 text-sm mt-5 text-left ">... المزيد </a>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="./images/web-icon.png" alt="" class="w-10">
+            <!-- نص عربي -->
+            <h3 class="text-lg my-4 text-gray-700 font-Outfit">UI / UX design</h3>
+            <!-- نص إنجليزي -->
+            <p class="text-sm text-gray-600 leading-5 text-left font-Ovo">Web Development is the Process of Building, Programming ...</p>
+            <!-- نص عربي -->
+            <p class="text-sm text-gray-600 leading-5 text-right">تطوير الويب هو عملية بناء وبرمجة</p>
+            <a href="" class="flex items-center gap-2 text-sm mt-5 text-left ">... المزيد </a>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="./images/web-icon.png" alt="" class="w-10">
+            <!-- نص عربي -->
+            <h3 class="text-lg my-4 text-gray-700 font-Outfit">Website programming</h3>
+            <!-- نص إنجليزي -->
+            <p class="text-sm text-gray-600 leading-5 text-left font-Ovo">Web Development is the Process of Building, Programming ...</p>
+            <!-- نص عربي -->
+            <p class="text-sm text-gray-600 leading-5 text-right">تطوير الويب هو عملية بناء وبرمجة</p>
+            <a href="" class="flex items-center gap-2 text-sm mt-5 text-left ">... المزيد </a>
+        </div>
+        
+    </div>
+</div>
+
+<!----------my work------------->
+
+<div id="work" class="w-full px-[12%] py-10 scroll-mt-20 scroll-mt-[120px]" data-aos="fade-up">
+    <h4 class="text-center mb-2 text-3xl">MY PROJECTS...</h4>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Explore a collection of projects that showcase my expertise.
+    </p>
+<div class="grid grid-cols-auto my-10 gap-5">
+    <div class="border border-gray-500 aspect-square bg-[url('./images/loqmatbait.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <a href="https://bissanfahmawi.github.io/loqmat_bait/" target="_blank" class="no-underline">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 cursor-pointer">
+                <div>
+                    <h2 class="font-semibold">Full Stack Project</h2>
+                    <p class="text-sm text-gray-700">Supporting productive kitchens</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    <div class="border border-gray-500 aspect-square bg-[url('./images/doctor.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <a href="https://bissanfahmawi.github.io/book_appointment/" target="_blank" class="no-underline">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold">Frontend Project</h2>
+                <p class="text-sm text-gray-700">Health center management system</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+    </a>
+    </div>
+    <div class="border border-gray-500 aspect-square bg-[url('./images/food_dele.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <a href="https://bissanfahmawi.github.io/restaurant/" target="_blank" class="no-underline">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold">Frontend Project</h2>
+                <p class="text-sm text-gray-700">Restaurant Website</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+        </a>
+    </div>
+  
+    <div class="border border-gray-500 aspect-square bg-[url('./images/emp2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold fon-Outfit">Full Stack Project</h2>
+                <p class="text-sm text-gray-700">Employee management system</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+    </div> 
+   
+</div>
+<div class="grid grid-cols-auto my-10 gap-5">
+    <div class="border border-gray-500 aspect-square bg-[url('./images/Gemini(1).png')] bg-no-repeat bg-[length:120%] bg-center rounded-lg relative cursor-pointer group">
+        <a href="https://bissanfahmawi.github.io/gemini/" target="_blank" class="no-underline">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 cursor-pointer">
+                <div>
+                    <h2 class="font-semibold">Full Stack Project</h2>
+                    <p class="text-sm text-gray-700">Artificial Intelligence Site</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    <div class="border border-gray-500 aspect-square bg-[url('./images/Employee(4).png')] bg-no-repeat bg-cover bg-[center_20%] rounded-lg relative cursor-pointer group">
+        <a href="https://bissanfahmawi.github.io/college/" target="_blank" class="no-underline">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold">Full Stack Project</h2>
+                <p class="text-sm text-gray-700">University College website</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+    </a>
+    </div>
+    <div class="border border-gray-500 aspect-square bg-[url('./images/rain.webp')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <a href="" target="_blank" class="no-underline">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold">Full Stack Project</h2>
+                <p class="text-sm text-gray-700">Weather site</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+        </a>
+    </div>
+  
+    <div class="border border-gray-500 aspect-square bg-[url('./images/Shein(1).png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold fon-Outfit">Full Stack Project</h2>
+                <p class="text-sm text-gray-700">It is being programmed now....</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/send-icon.png" alt="" class="w-5">
+            </div>
+        </div>
+    </div> 
+   
+</div>
+
+<a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">More...
+    <img src="./images/right-arrow-bold.png" alt="" class="w-4">
+</a>
+</div>
+ <!----------contact------------>    
+ <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 scroll-mt-[120px]"data-aos="fade-up">
+  <h4 class="text-center mb-2 text-3xl">Contact me...</h4>
+ <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+    We'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</p>
+<form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+    <input type="hidden" name="access_key" value="556a7ba6-b78f-40f1-be8f-619dbe750e78">
+    <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+        <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
+        <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
+       
+    </div>
+    <textarea rows="6" placeholder="Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
+<button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit now <img src="./images/right-arrow-bold.png" alt="" class="w-4"></button>
+</form>
+</div>
+
+<!----------footer--------->
+<div class="mt-20">
+    <div class="text-center">
+        <img src="./images/ourlogo.png" alt="" class="w-36 mx-auto mb-2">
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="./images/mail_icon.png" alt="" class="w-6">
+            bissanfahma@gmail.com
+        </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6 sm:text-left">
+        <p class="mb-4 sm:mb-0">&copy; 2025 TEC. All rights reserved.</p>
+        <ul class="flex flex-col sm:flex-row items-center gap-4 sm:gap-10 justify-center">
+            <li>
+                <a href="https://www.instagram.com/frontend_coder2025?igsh=MWw0YXNpcjJmNTNvMw==" class="flex items-center space-x-2 hover:text-pink-500">
+                    <i class="bx bxl-instagram text-2xl"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com" class="flex items-center space-x-2 hover:text-blue-500">
+                    <i class="bx bxl-facebook text-2xl"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com" class="flex items-center space-x-2 hover:text-gray-500">
+                    <i class="bx bxl-github text-2xl"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/bissan-fahmawi-8b19902b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="flex items-center space-x-2 hover:text-blue-500">
+                    <i class="bx bxl-linkedin text-2xl"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script >
+     AOS.init();
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+
+ 
+    function openMenu() {
+        document.getElementById("sideMenu").style.right = "0";
+    }
+
+
+    function closeMenu() {
+        document.getElementById("sideMenu").style.right = "-100%";
+    }
+    window.addEventListener('scroll', () => {
+    const navBar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navBar.classList.add('backdrop-blur-lg', 'bg-white', 'bg-opacity-50');
+    } else {
+        navBar.classList.remove('backdrop-blur-lg', 'bg-white', 'bg-opacity-50');
+    }
+});
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let counterElement = document.getElementById("projects-counter");
+        let startValue = 0;
+        let endValue = 9;
+        let duration = 100; 
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let counter = setInterval(() => {
+                        if (startValue < endValue) {
+                            startValue++;
+                            counterElement.textContent = startValue;
+                        } else {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(counterElement);
+    });
+</script>
+
+</html>
